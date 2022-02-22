@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    .inner{
+  margin: 0 auto;
+  max-width: 400px;
+  width: 100%;
+}
+
+.nav{
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0,0,0, .4);
+  display: flex;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  width: 400px;
+}
+
+.nav-list{
+  list-style: none;
+  display: flex;
+  padding: 0 15px;
+}
+
+.nav-list li{
+  margin-right: 20px;
+}
+
+.menus{
+  align-items: center;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  margin: 100px auto;
+  width: 400px;
+}
+
+.menus-ttl{
+  color: #fff;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.menu1{
+  background: gray;
+}
+
+.menu2{
+  background: orange;
+}
+
+.menu3{
+  background: green;
+}
+  </style>
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="inner">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#menu1">Menu1</a></li>
+        <li><a href="#menu2">Menu2</a></li>
+        <li><a href="#menu3">Menu3</a></li>
+      </ul><!-- /.nav-list -->
+    </nav><!-- /.nav -->
+    
+    <section id="menu1" class="menus menu1">
+      <h2 class="menus-ttl">menu1</h2>
+    </section><!-- /#menu1.menus -->
+    <section id="menu2" class="menus menu2">
+      <h2 class="menus-ttl">menu2</h2>
+    </section><!-- /#menu1.menus -->
+    <section id="menu3" class="menus menu3">
+      <h2 class="menus-ttl">menu3</h2>
+    </section><!-- /#menu1.menus -->
+    </div><!-- /.inner -->
+
+    <script src="js/topScroll.js"></script>
+</body>
+</html>
